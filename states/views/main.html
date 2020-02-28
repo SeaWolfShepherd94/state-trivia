@@ -1,0 +1,28 @@
+<!--<div class="main">
+  <div class="container">
+
+    <h2>Recent Photos</h2>
+    <div class="row">
+      <div class="item col-md-4" ng-repeat="state in states">
+        <a href="#/states/{{$index}}">
+          <img class="img-responsive" ng-src="{{ state.url }}">
+          <p class="author">by {{ state.author }}</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>-->
+<div>
+	<h1>The United States</h1>
+	<table border="1">
+		<tr>
+			<th>Map</th>
+			<th>State</th>
+		</tr>
+		<tr ng-repeat="state in states" >
+			<th><a href="#/states/{{$index}}"><img ng-src="{{state.Image}}"></a></th>
+			<th>{{state.State}}</th>
+		</tr>
+	</table>
+</div>
